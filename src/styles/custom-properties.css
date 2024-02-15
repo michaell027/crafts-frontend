@@ -1,0 +1,7 @@
+.custom-button-light {
+    @apply bg-blue-500 text-white;
+}
+
+.custom-button-dark {
+    @apply bg-blue-900 text-white;
+}

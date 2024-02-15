@@ -1,0 +1,18 @@
+{
+  "page": {
+    "home": {
+      "title": "Domovská stránka",
+      "description": "Vitajte na domovskej stránke"
+    }
+  },
+  "component": {
+        "header": {
+          "title": "Craft-makers",
+          "menu": {
+            "home": "Domov",
+            "about": "O nás",
+            "contact": "Kontakt"
+          }
+        }
+    }
+}

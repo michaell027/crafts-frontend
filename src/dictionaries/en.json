@@ -1,0 +1,18 @@
+{
+  "page": {
+    "home": {
+      "title": "Home",
+      "description": "Welcome to the home page"
+    }
+  },
+  "component": {
+    "header": {
+      "title": "Craft-makers",
+      "menu": {
+        "home": "Home",
+        "about": "About",
+        "contact": "Contact"
+      }
+    }
+  }
+}

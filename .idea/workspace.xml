@@ -4,11 +4,32 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="214e5851-9dcb-470f-aecf-f36a73c2dace" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/next.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/vercel.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/layout.tsx" afterDir="false" />
+    <list default="true" id="214e5851-9dcb-470f-aecf-f36a73c2dace" name="Changes" comment="added i18n">
+      <change afterPath="$PROJECT_DIR$/i18n.config.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/LocaleSwitcher.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/dictionaries/en.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/dictionaries/sk.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lib/dictionary.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/middleware.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/styles/custom-properties.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/next.config.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/next.config.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/api/users/route.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/[lang]/favicon.ico" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/[lang]/globals.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/[lang]/layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/[lang]/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/posts/[postId]/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/[lang]/posts/[postId]/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/posts/error.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/[lang]/posts/error.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/posts/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/[lang]/posts/layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/posts/loading.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/[lang]/posts/loading.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/posts/new/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/[lang]/posts/new/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/posts/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/[lang]/posts/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/user/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/[lang]/user/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tailwind.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,6 +39,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="TypeScript File" />
         <option value="TypeScript JSX File" />
       </list>
     </option>
@@ -37,31 +59,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/Users/misel/OneDrive/Počítač/project-remeslo/frontend/crafts_ui",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "npm.dev.executor": "Run",
-    "prettierjs.PrettierConfiguration.Package": "C:\\Users\\misel\\AppData\\Roaming\\npm\\node_modules\\prettier",
-    "settings.editor.selected.configurable": "settings.javascript.prettier",
-    "ts.external.directory.path": "C:\\Users\\misel\\OneDrive\\Počítač\\project-remeslo\\frontend\\crafts_ui\\node_modules\\typescript\\lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/misel/OneDrive/Počítač/project-remeslo/frontend/crafts_ui&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;npm.dev.executor&quot;: &quot;Run&quot;,
+    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;C:\\Users\\misel\\AppData\\Roaming\\npm\\node_modules\\prettier&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;settings.javascript.prettier&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\misel\\OneDrive\\Počítač\\project-remeslo\\frontend\\crafts_ui\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\misel\OneDrive\Počítač\project-remeslo\frontend\crafts_ui\public\assets\images" />
-      <recent name="C:\Users\misel\OneDrive\Počítač\project-remeslo\frontend\crafts_ui\public\assets" />
-      <recent name="C:\Users\misel\OneDrive\Počítač\project-remeslo\frontend\crafts_ui\public" />
       <recent name="C:\Users\misel\OneDrive\Počítač\project-remeslo\frontend\crafts_ui\src" />
+      <recent name="C:\Users\misel\OneDrive\Počítač\project-remeslo\frontend\crafts_ui\src\app\[lang]\posts" />
+      <recent name="C:\Users\misel\OneDrive\Počítač\project-remeslo\frontend\crafts_ui\src\app\[lang]" />
       <recent name="C:\Users\misel\OneDrive\Počítač\project-remeslo\frontend\crafts_ui" />
+      <recent name="C:\Users\misel\OneDrive\Počítač\project-remeslo\frontend\crafts_ui\src\styles" />
     </key>
   </component>
   <component name="RunManager">
@@ -85,11 +107,18 @@
       <option name="presentableId" value="Default" />
       <updated>1707663694971</updated>
       <workItem from="1707663699042" duration="16000" />
-      <workItem from="1707663716616" duration="9955000" />
+      <workItem from="1707663716616" duration="12729000" />
+      <workItem from="1707771009070" duration="11009000" />
+      <workItem from="1708029539496" duration="31000" />
+      <workItem from="1708029584722" duration="1944000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="added i18n" />
+    <option name="LAST_COMMIT_MESSAGE" value="added i18n" />
   </component>
 </project>
