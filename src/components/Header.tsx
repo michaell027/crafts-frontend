@@ -2,8 +2,11 @@
 import { PiSunBold } from "react-icons/pi";
 import { useState } from "react";
 import LocaleSwitcher from "@/components/LocaleSwitcher";
+import { useDictionary } from "@/providers/dictionary-provider";
 
-const Header = ({ dict }: Readonly<{ dict: any }>) => {
+const Header = () => {
+  const dictionary = useDictionary();
+
   const [isDropdownMenuOpen, setIsDropDownMenuOpen] = useState(false);
   const [isDropdownLanguageOpen, setIsDropdownLanguageOpen] = useState(false);
 
@@ -19,18 +22,20 @@ const Header = ({ dict }: Readonly<{ dict: any }>) => {
     <header className="w-full text-gray-700 bg-white shadow-sm body-font border-b border-gray-200 border-solid dark:bg-gray-800 dark:border-gray-700 dark:text-gray-300">
       <div className="container grid grid-cols-3 items-center justify-between p-6 mx-auto flex-row">
         <a className="flex items-center justify-start font-medium title-font">
-          <h1 className="text-2xl font-bold">{dict.component.header.title}</h1>
+          <h1 className="text-2xl font-bold">
+            {dictionary.component.header.title}
+          </h1>
         </a>
 
         <nav className="hidden md:flex flex-wrap items-center justify-center text-base">
           <a href="#_" className="mr-5 font-medium hover:text-gray-900">
-            {dict.component.header.menu.home}
+            {dictionary.component.header.menu.home}
           </a>
           <a href="#_" className="mr-5 font-medium hover:text-gray-900">
-            {dict.component.header.menu.about}
+            {dictionary.component.header.menu.about}
           </a>
           <a href="#_" className="font-medium hover:text-gray-900">
-            {dict.component.header.menu.contact}
+            {dictionary.component.header.menu.contact}
           </a>
         </nav>
 

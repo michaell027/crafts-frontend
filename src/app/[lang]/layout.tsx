@@ -5,6 +5,7 @@ import { Locale, i18n } from "@/../i18n.config";
 
 import Header from "@/components/Header";
 import { getDictionary } from "@/lib/dictionary";
+import DictionaryProvider from "@/providers/dictionary-provider";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -22,12 +23,14 @@ export default async function RootLayout({
   children: React.ReactNode;
   params: { lang: Locale };
 }>) {
-  const dict = await getDictionary(params.lang);
+  const dictionary = await getDictionary(params.lang);
   return (
     <html lang={params.lang} className="">
       <body className={"bg-white text-gray-950 w-full min-h-screen"}>
-        <Header dict={dict} />
-        {children}
+        <DictionaryProvider dictionary={dictionary}>
+          <Header />
+          {children}
+        </DictionaryProvider>
       </body>
     </html>
   );

@@ -5,31 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="214e5851-9dcb-470f-aecf-f36a73c2dace" name="Changes" comment="added i18n">
-      <change afterPath="$PROJECT_DIR$/i18n.config.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/LocaleSwitcher.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dictionaries/en.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dictionaries/sk.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/dictionary.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/middleware.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/styles/custom-properties.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/providers/dictionary-provider.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/next.config.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/next.config.mjs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/api/users/route.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/[lang]/favicon.ico" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/[lang]/globals.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/[lang]/layout.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/[lang]/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/posts/[postId]/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/[lang]/posts/[postId]/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/posts/error.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/[lang]/posts/error.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/posts/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/[lang]/posts/layout.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/posts/loading.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/[lang]/posts/loading.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/posts/new/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/[lang]/posts/new/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/posts/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/[lang]/posts/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/user/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/[lang]/user/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tailwind.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/[lang]/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/[lang]/layout.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,8 +88,17 @@
       <workItem from="1707663716616" duration="12729000" />
       <workItem from="1707771009070" duration="11009000" />
       <workItem from="1708029539496" duration="31000" />
-      <workItem from="1708029584722" duration="1944000" />
+      <workItem from="1708029584722" duration="2346000" />
     </task>
+    <task id="LOCAL-00001" summary="added i18n">
+      <option name="closed" value="true" />
+      <created>1708032029644</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1708032029644</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
