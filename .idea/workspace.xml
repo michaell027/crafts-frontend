@@ -4,10 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="214e5851-9dcb-470f-aecf-f36a73c2dace" name="Changes" comment="added i18n">
-      <change afterPath="$PROJECT_DIR$/src/providers/dictionary-provider.tsx" afterDir="false" />
+    <list default="true" id="214e5851-9dcb-470f-aecf-f36a73c2dace" name="Changes" comment="create dictionary provider">
+      <change afterPath="$PROJECT_DIR$/public/assets/icons/flags/en.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/icons/flags/sk.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/LeftSidebar.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/ThemeSwitcher.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/Category.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/styles/custom-animations.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/[lang]/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/[lang]/globals.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/[lang]/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/[lang]/layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/[lang]/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/[lang]/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/LocaleSwitcher.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/LocaleSwitcher.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/dictionary.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/dictionary.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/middleware.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/middleware.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/custom-properties.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/custom-properties.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,8 +30,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="TypeScript File" />
         <option value="TypeScript JSX File" />
+        <option value="CSS File" />
+        <option value="TypeScript File" />
       </list>
     </option>
   </component>
@@ -37,31 +51,32 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/misel/OneDrive/Počítač/project-remeslo/frontend/crafts_ui&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;npm.dev.executor&quot;: &quot;Run&quot;,
-    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;C:\\Users\\misel\\AppData\\Roaming\\npm\\node_modules\\prettier&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;settings.javascript.prettier&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\misel\\OneDrive\\Počítač\\project-remeslo\\frontend\\crafts_ui\\node_modules\\typescript\\lib&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Users/misel/OneDrive/Počítač/project-remeslo/frontend/crafts_ui",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "npm.dev.executor": "Run",
+    "prettierjs.PrettierConfiguration.Package": "C:\\Users\\misel\\AppData\\Roaming\\npm\\node_modules\\prettier",
+    "settings.editor.selected.configurable": "settings.javascript.prettier",
+    "ts.external.directory.path": "C:\\Users\\misel\\OneDrive\\Počítač\\project-remeslo\\frontend\\crafts_ui\\node_modules\\typescript\\lib",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\misel\OneDrive\Počítač\project-remeslo\frontend\crafts_ui\public\assets\icons\flags" />
+      <recent name="C:\Users\misel\OneDrive\Počítač\project-remeslo\frontend\crafts_ui\public" />
       <recent name="C:\Users\misel\OneDrive\Počítač\project-remeslo\frontend\crafts_ui\src" />
       <recent name="C:\Users\misel\OneDrive\Počítač\project-remeslo\frontend\crafts_ui\src\app\[lang]\posts" />
       <recent name="C:\Users\misel\OneDrive\Počítač\project-remeslo\frontend\crafts_ui\src\app\[lang]" />
-      <recent name="C:\Users\misel\OneDrive\Počítač\project-remeslo\frontend\crafts_ui" />
-      <recent name="C:\Users\misel\OneDrive\Počítač\project-remeslo\frontend\crafts_ui\src\styles" />
     </key>
   </component>
   <component name="RunManager">
@@ -88,7 +103,8 @@
       <workItem from="1707663716616" duration="12729000" />
       <workItem from="1707771009070" duration="11009000" />
       <workItem from="1708029539496" duration="31000" />
-      <workItem from="1708029584722" duration="2346000" />
+      <workItem from="1708029584722" duration="16258000" />
+      <workItem from="1708127255030" duration="15263000" />
     </task>
     <task id="LOCAL-00001" summary="added i18n">
       <option name="closed" value="true" />
@@ -98,7 +114,15 @@
       <option name="project" value="LOCAL" />
       <updated>1708032029644</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="create dictionary provider">
+      <option name="closed" value="true" />
+      <created>1708032516897</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1708032516897</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -106,6 +130,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="added i18n" />
-    <option name="LAST_COMMIT_MESSAGE" value="added i18n" />
+    <MESSAGE value="create dictionary provider" />
+    <option name="LAST_COMMIT_MESSAGE" value="create dictionary provider" />
   </component>
 </project>

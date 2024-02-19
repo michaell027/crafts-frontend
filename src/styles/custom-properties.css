@@ -5,3 +5,11 @@
 .custom-button-dark {
     @apply bg-blue-900 text-white;
 }
+
+.custom-dropdown {
+    @apply inline-flex text-center items-center justify-center gap-x-2 rounded-md px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-400/30 bg-transparent dark:text-gray-300 dark:ring-gray-600 dark:hover:bg-gray-600/30
+}
+
+.custom-dropdown-item {
+    @apply text-gray-700 inline-flex px-4 py-3 text-sm items-center gap-x-2 text-left w-full hover:bg-gray-300/30 hover:rounded-md
+}

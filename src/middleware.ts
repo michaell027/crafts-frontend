@@ -32,6 +32,7 @@ export default async function middleware(request: NextRequest) {
   // redirect if there is no locale in the pathname
   if (pathnameIsMissingLocale) {
     const locale = getLocale(request);
+    console.log("locale", locale);
     return NextResponse.redirect(
       new URL(
         `/${locale}${pathname.startsWith("/") ? "" : "/"}${pathname}`,

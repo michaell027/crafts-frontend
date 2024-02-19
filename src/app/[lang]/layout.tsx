@@ -6,6 +6,7 @@ import { Locale, i18n } from "@/../i18n.config";
 import Header from "@/components/Header";
 import { getDictionary } from "@/lib/dictionary";
 import DictionaryProvider from "@/providers/dictionary-provider";
+import LeftSidebar from "@/components/LeftSidebar";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -29,7 +30,10 @@ export default async function RootLayout({
       <body className={"bg-white text-gray-950 w-full min-h-screen"}>
         <DictionaryProvider dictionary={dictionary}>
           <Header />
-          {children}
+          <div className={"flex-row"}>
+            <LeftSidebar />
+            {children}
+          </div>
         </DictionaryProvider>
       </body>
     </html>
