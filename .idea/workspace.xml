@@ -4,16 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="214e5851-9dcb-470f-aecf-f36a73c2dace" name="Changes" comment="create dictionary provider">
-      <change afterPath="$PROJECT_DIR$/src/utils/getLocaleFunction.ts" afterDir="false" />
+    <list default="true" id="214e5851-9dcb-470f-aecf-f36a73c2dace" name="Changes" comment="added divider">
+      <change afterPath="$PROJECT_DIR$/src/providers/sidebar-provider.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/[lang]/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/[lang]/layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/[lang]/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/[lang]/page.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/LeftSidebar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/LeftSidebar.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/LocaleSwitcher.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/LocaleSwitcher.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/RightSidebar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/RightSidebar.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dictionaries/en.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/dictionaries/en.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dictionaries/sk.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/dictionaries/sk.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,8 +21,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
-        <option value="TypeScript JSX File" />
         <option value="TypeScript File" />
+        <option value="TypeScript JSX File" />
       </list>
     </option>
   </component>
@@ -98,7 +95,7 @@
       <workItem from="1708029539496" duration="31000" />
       <workItem from="1708029584722" duration="16258000" />
       <workItem from="1708127255030" duration="16148000" />
-      <workItem from="1708986699762" duration="5714000" />
+      <workItem from="1708986699762" duration="8808000" />
     </task>
     <task id="LOCAL-00001" summary="added i18n">
       <option name="closed" value="true" />
@@ -116,7 +113,15 @@
       <option name="project" value="LOCAL" />
       <updated>1708032516897</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="added right sidebar">
+      <option name="closed" value="true" />
+      <created>1708993047512</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1708993047512</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -125,6 +130,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="added i18n" />
     <MESSAGE value="create dictionary provider" />
-    <option name="LAST_COMMIT_MESSAGE" value="create dictionary provider" />
+    <MESSAGE value="added right sidebar" />
+    <MESSAGE value="added divider" />
+    <option name="LAST_COMMIT_MESSAGE" value="added divider" />
   </component>
 </project>

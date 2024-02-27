@@ -4,10 +4,11 @@ import LocaleSwitcher from "@/components/LocaleSwitcher";
 import { useDictionary } from "@/providers/dictionary-provider";
 import ThemeSwitcher from "@/components/ThemeSwitcher";
 import Link from "next/link";
+import { useSidebar } from "@/providers/sidebar-provider";
 
 const Header = () => {
   const dictionary = useDictionary();
-  const [isOpen, setIsOpen] = useState(false);
+  const { toggleSidebar } = useSidebar();
   const [isDropdownMenuOpen, setIsDropDownMenuOpen] = useState(false);
 
   const handleToggleDropdownMenu = () => {
@@ -15,13 +16,7 @@ const Header = () => {
   };
 
   const toggleMenu = () => {
-    const newIsOpen = !isOpen;
-    setIsOpen(newIsOpen);
-    if (newIsOpen) {
-      document.getElementById("leftSidebar")!.classList.remove("hidden");
-    } else {
-      document.getElementById("leftSidebar")!.classList.add("hidden");
-    }
+    toggleSidebar();
   };
 
   return (

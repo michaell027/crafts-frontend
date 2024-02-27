@@ -9,7 +9,6 @@ const LeftSidebar = () => {
   const locale: string = getLocaleFunction(usePathname())();
   const [categories, setCategories] = useState<Category[]>([]);
   const dictionary = useDictionary();
-  const [isOpen, setIsOpen] = useState(true);
 
   useEffect(() => {
     const fetchData = async () => {
