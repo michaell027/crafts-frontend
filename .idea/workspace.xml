@@ -5,22 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="214e5851-9dcb-470f-aecf-f36a73c2dace" name="Changes" comment="create dictionary provider">
-      <change afterPath="$PROJECT_DIR$/public/assets/icons/flags/en.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/icons/flags/sk.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/LeftSidebar.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/ThemeSwitcher.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/Category.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/styles/custom-animations.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/getLocaleFunction.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/[lang]/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/[lang]/globals.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/[lang]/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/[lang]/layout.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/[lang]/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/[lang]/page.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/LeftSidebar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/LeftSidebar.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/LocaleSwitcher.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/LocaleSwitcher.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/dictionary.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/dictionary.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/middleware.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/middleware.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/custom-properties.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/custom-properties.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/RightSidebar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/RightSidebar.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dictionaries/en.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/dictionaries/en.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dictionaries/sk.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/dictionaries/sk.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,8 +23,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="TypeScript JSX File" />
         <option value="CSS File" />
+        <option value="TypeScript JSX File" />
         <option value="TypeScript File" />
       </list>
     </option>
@@ -51,25 +44,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/misel/OneDrive/Počítač/project-remeslo/frontend/crafts_ui",
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "npm.dev.executor": "Run",
-    "prettierjs.PrettierConfiguration.Package": "C:\\Users\\misel\\AppData\\Roaming\\npm\\node_modules\\prettier",
-    "settings.editor.selected.configurable": "settings.javascript.prettier",
-    "ts.external.directory.path": "C:\\Users\\misel\\OneDrive\\Počítač\\project-remeslo\\frontend\\crafts_ui\\node_modules\\typescript\\lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/misel/OneDrive/Počítač/project-remeslo/frontend/crafts_ui&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;npm.dev.executor&quot;: &quot;Run&quot;,
+    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;C:\\Users\\misel\\AppData\\Roaming\\npm\\node_modules\\prettier&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;settings.javascript.prettier&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\misel\\OneDrive\\Počítač\\project-remeslo\\frontend\\crafts_ui\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\misel\OneDrive\Počítač\project-remeslo\frontend\crafts_ui\public\assets\icons\flags" />
@@ -104,7 +97,8 @@
       <workItem from="1707771009070" duration="11009000" />
       <workItem from="1708029539496" duration="31000" />
       <workItem from="1708029584722" duration="16258000" />
-      <workItem from="1708127255030" duration="15263000" />
+      <workItem from="1708127255030" duration="16148000" />
+      <workItem from="1708986699762" duration="5714000" />
     </task>
     <task id="LOCAL-00001" summary="added i18n">
       <option name="closed" value="true" />

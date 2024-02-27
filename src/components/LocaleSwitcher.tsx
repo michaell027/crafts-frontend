@@ -58,7 +58,7 @@ export default function LocaleSwitcher() {
 
       {isDropdownLanguageOpen && (
         <ul
-          className="absolute right-0 z-10 mt-2 w-28 divide-y divide-gray-100 rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"
+          className="absolute right-0 z-20 mt-2 w-28 divide-y divide-gray-100 rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"
           role="menu"
           aria-orientation="vertical"
           aria-labelledby="menu-button"

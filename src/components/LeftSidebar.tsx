@@ -2,19 +2,16 @@
 import React, { useEffect, useState } from "react";
 import { Category } from "@/models/Category";
 import { usePathname } from "next/navigation";
-import { i18n } from "../../i18n.config";
+import { getLocaleFunction } from "@/utils/getLocaleFunction";
+import { useDictionary } from "@/providers/dictionary-provider";
 
 const LeftSidebar = () => {
-  const pathName = usePathname();
-  const [locale, setLocale] = useState<string>("");
+  const locale: string = getLocaleFunction(usePathname())();
   const [categories, setCategories] = useState<Category[]>([]);
+  const dictionary = useDictionary();
+  const [isOpen, setIsOpen] = useState(true);
 
   useEffect(() => {
-    const getLocale = (): string => {
-      if (!pathName) return i18n.defaultLocale;
-      const segments = pathName.split("/");
-      return segments[1];
-    };
     const fetchData = async () => {
       const res = await fetch("https://localhost:7185/api/Category");
       const categories = await res.json();
@@ -23,17 +20,16 @@ const LeftSidebar = () => {
     fetchData().then((data) => {
       setCategories(data);
     });
-    setLocale(getLocale());
   }, []);
 
   return (
     <div>
-      <div>
+      <div id="leftSidebar" className="hidden lg:block">
         <aside className="w-fit text-gray-700 fixed top-[81.5px] left-0 z-20 h-screen transition-transform bg-[#F3F9FF]/95 border-gray-300 border-r-2 dark:border-gray-600/30 dark:bg-[#0d1017]/95 dark:text-gray-300">
           <div className="h-full w-full px-3 mr-14">
             <button className="w-full justify-between flex p-2 my-2 text-gray-900 rounded-md dark:text-white hover:bg-gray-400 dark:hover:bg-gray-700">
               <span className="text-xl font-semibold text-black whitespace-nowrap dark:text-white">
-                Categories
+                {dictionary.component.leftSidebar.categories}
               </span>
 
               <div className="pl-10 text-black dark:text-white">

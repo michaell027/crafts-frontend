@@ -13,6 +13,19 @@
         "about": "About",
         "contact": "Contact"
       }
+    },
+    "leftSidebar": {
+      "categories": "Categories"
+    },
+    "rightSidebar" : {
+      "craftsman" : "If you are craftsman,",
+      "craftsmanDesc" : " join our team and discover new job opportunities.",
+      "join" : "Join us",
+      "client" : "If you need help,",
+      "clientDesc" : "register and find a skilled helper for your problem.",
+      "register" : "Register",
+      "loginDesc" : "Are you already registered?",
+      "login" : "Login"
     }
   }
 }

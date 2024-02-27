@@ -13,6 +13,19 @@
             "about": "O nás",
             "contact": "Kontakt"
           }
-        }
+        },
+    "leftSidebar" : {
+      "categories": "Kategórie"
+    },
+    "rightSidebar" : {
+      "craftsman" : "Ak ste remeselník,",
+      "craftsmanDesc" : "pridajte sa k nášmu tímu a objavujte nové pracovné príležitosti.",
+      "join" : "Pridajte sa k nám",
+      "client" : "Ak potrebujete pomoc,",
+      "clientDesc" : "zaregistrujte sa a nájdite kvalifikovaného pomocníka pre váš problém.",
+      "register" : "Registrovať sa",
+      "loginDesc" : "Už ste zaregistrovaný?",
+      "login" : "Prihlásiť sa"
     }
+  }
 }

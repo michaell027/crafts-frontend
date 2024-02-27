@@ -7,6 +7,7 @@ import Header from "@/components/Header";
 import { getDictionary } from "@/lib/dictionary";
 import DictionaryProvider from "@/providers/dictionary-provider";
 import LeftSidebar from "@/components/LeftSidebar";
+import RightSidebar from "@/components/RightSidebar";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -33,6 +34,7 @@ export default async function RootLayout({
           <div className={"flex-row"}>
             <LeftSidebar />
             {children}
+            <RightSidebar />
           </div>
         </DictionaryProvider>
       </body>
