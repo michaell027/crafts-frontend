@@ -26,6 +26,20 @@
       "register" : "Registrovať sa",
       "loginDesc" : "Už ste zaregistrovaný?",
       "login" : "Prihlásiť sa"
+    },
+    "home" : {
+      "title": "Vitajte na našej stránke",
+      "description": "Náš cieľ je spojiť kvalifikovaných remeselníkov s tými, ktorí potrebujú ich odborné služby. Ponúkame prehľadnú platformu, kde môžete prehliadať profily remeselníkov a vybrať si toho najlepšieho. Dovoľte nám pomôcť vám nájsť remeselníka, ktorý bude zodpovedať vašim potrebám a poskytne vám kvalitnú prácu.",
+      "services": "Servisy, ktoré ponúkame",
+      "register": "Registrovať sa",
+      "readMore": "Čítať viac",
+      "statisticTitle": "Dôveruje nám už xxx ľudí.",
+      "statisticDescription": "Sme hrdí na dôveru, ktorú sme získali od našich poskytovateľov služieb, ale aj zákazníkov, ktorí si u nás našli spoľahlivého remeselníka a boli spokojní s výsledkom.",
+      "craftsmen": "Remeselníci",
+      "customers": "Zákazníci",
+      "statisticServices": "Poskytnuté služby",
+      "reviews": "Recenzie",
+      "bestCraftsmen": "Tí najlepší:"
     }
   }
 }

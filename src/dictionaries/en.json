@@ -26,6 +26,20 @@
       "register" : "Register",
       "loginDesc" : "Are you already registered?",
       "login" : "Login"
+    },
+    "home" : {
+      "title": "Welcome to our website",
+      "description": "Our goal is to connect skilled craftsmen with those who need their expertise. We provide a user-friendly platform where you can browse profiles of craftsmen and choose the best one for you. Allow us to help you find a craftsman who will meet your needs and provide you with quality work.",
+      "services": "Services we offered",
+      "register": "Register",
+      "readMore": "Read more",
+      "statisticTitle": "We already have the trust of xxx people.",
+      "statisticDescription": "We are proud of the trust we have gained from our service providers as well as customers who have found reliable craftsmen with us and were satisfied with the results.",
+      "craftsmen": "Craftsmen",
+      "customers": "Customers",
+      "statisticServices": "Services provided",
+      "reviews": "Reviews",
+      "bestCraftsmen": "The best of the bests:"
     }
   }
 }

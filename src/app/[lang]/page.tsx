@@ -1,4 +1,5 @@
 import type { Locale } from "@/../i18n.config";
+import Title from "@/components/Title";
 
 export default async function Home({
   params: { lang },
@@ -8,10 +9,9 @@ export default async function Home({
   return (
     <main>
       <div>
-        <div className="bg-white min-h-screen dark:bg-black pt-[100px] lg:pl-[256px] lg:pr-[256px] pr-[64px] pl-[0px]">
-          <div className="flex flex-col w-full justify-center items-center">
-            {lang}
-            {/*<Title />*/}
+        <div className="bg-white min-h-screen dark:bg-black pt-[81.5px] lg:pl-[261px] lg:pr-[256px] pr-[64px] pl-[0px]">
+          <div className="flex flex-col w-full">
+            <Title />
             {/*<Carousel />*/}
             {/*<Statistics />*/}
             <div className="flex w-full justify-center gap-12 px-8">
