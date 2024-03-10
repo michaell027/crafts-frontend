@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import { useDictionary } from "@/providers/dictionary-provider";
 
 const RightSidebar = () => {
-  const [showMaxiSidebar, setShowMaxiSidebar] = useState(false);
+  const [showMaxiSidebar, setShowMaxiSidebar] = useState<boolean>(false);
   const dictionary = useDictionary();
 
   const handleMouseEnter = () => {
@@ -55,10 +55,7 @@ const RightSidebar = () => {
                 <p className="text-center">
                   {dictionary.component.rightSidebar.craftsmanDesc}
                 </p>
-                <button
-                  onClick={() => (window.location.href = "/craftsman/register")}
-                  className="flex items-center p-2 mt-4 my-2 bg-green-500 dark:bg-green-800 text-gray-100 rounded-lg dark:text-white hover:bg-green-600 dark:hover:bg-green-900 group"
-                >
+                <button className="flex items-center p-2 mt-4 my-2 bg-green-500 dark:bg-green-800 text-gray-100 rounded-lg dark:text-white hover:bg-green-600 dark:hover:bg-green-900 group">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"

@@ -4,13 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="214e5851-9dcb-470f-aecf-f36a73c2dace" name="Changes" comment="added divider">
-      <change afterPath="$PROJECT_DIR$/src/components/Title.tsx" afterDir="false" />
+    <list default="true" id="214e5851-9dcb-470f-aecf-f36a73c2dace" name="Changes" comment="added title component in home page">
+      <change afterPath="$PROJECT_DIR$/src/components/RotateText.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/services/categories-service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/[lang]/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/[lang]/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/LeftSidebar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/LeftSidebar.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/RightSidebar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/RightSidebar.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dictionaries/en.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/dictionaries/en.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dictionaries/sk.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/dictionaries/sk.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Title.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Title.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/custom-animations.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/custom-animations.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,8 +25,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
-        <option value="TypeScript File" />
         <option value="TypeScript JSX File" />
+        <option value="TypeScript File" />
       </list>
     </option>
   </component>
@@ -62,11 +66,11 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\misel\OneDrive\Počítač\project-remeslo\frontend\crafts_ui" />
+      <recent name="C:\Users\misel\OneDrive\Počítač\project-remeslo\frontend\crafts_ui\src" />
+      <recent name="C:\Users\misel\OneDrive\Počítač\project-remeslo\frontend\crafts_ui\src\app" />
       <recent name="C:\Users\misel\OneDrive\Počítač\project-remeslo\frontend\crafts_ui\public\assets\icons\flags" />
       <recent name="C:\Users\misel\OneDrive\Počítač\project-remeslo\frontend\crafts_ui\public" />
-      <recent name="C:\Users\misel\OneDrive\Počítač\project-remeslo\frontend\crafts_ui\src" />
-      <recent name="C:\Users\misel\OneDrive\Počítač\project-remeslo\frontend\crafts_ui\src\app\[lang]\posts" />
-      <recent name="C:\Users\misel\OneDrive\Počítač\project-remeslo\frontend\crafts_ui\src\app\[lang]" />
     </key>
   </component>
   <component name="RunManager">
@@ -95,7 +99,9 @@
       <workItem from="1708029539496" duration="31000" />
       <workItem from="1708029584722" duration="16258000" />
       <workItem from="1708127255030" duration="16148000" />
-      <workItem from="1708986699762" duration="11362000" />
+      <workItem from="1708986699762" duration="16597000" />
+      <workItem from="1709584380722" duration="70000" />
+      <workItem from="1710002398767" duration="3866000" />
     </task>
     <task id="LOCAL-00001" summary="added i18n">
       <option name="closed" value="true" />
@@ -129,7 +135,15 @@
       <option name="project" value="LOCAL" />
       <updated>1709077840415</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="added title component in home page">
+      <option name="closed" value="true" />
+      <created>1709080545607</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1709080545607</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -140,6 +154,7 @@
     <MESSAGE value="create dictionary provider" />
     <MESSAGE value="added right sidebar" />
     <MESSAGE value="added divider" />
-    <option name="LAST_COMMIT_MESSAGE" value="added divider" />
+    <MESSAGE value="added title component in home page" />
+    <option name="LAST_COMMIT_MESSAGE" value="added title component in home page" />
   </component>
 </project>

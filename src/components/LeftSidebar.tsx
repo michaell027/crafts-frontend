@@ -4,6 +4,7 @@ import { Category } from "@/models/Category";
 import { usePathname } from "next/navigation";
 import { getLocaleFunction } from "@/utils/getLocaleFunction";
 import { useDictionary } from "@/providers/dictionary-provider";
+import getCategories from "@/services/categories-service";
 
 const LeftSidebar = () => {
   const locale: string = getLocaleFunction(usePathname())();
@@ -11,14 +12,7 @@ const LeftSidebar = () => {
   const dictionary = useDictionary();
 
   useEffect(() => {
-    const fetchData = async () => {
-      const res = await fetch("https://localhost:7185/api/Category");
-      const categories = await res.json();
-      return categories as Category[];
-    };
-    fetchData().then((data) => {
-      setCategories(data);
-    });
+    getCategories().then((data) => setCategories(data));
   }, []);
 
   return (

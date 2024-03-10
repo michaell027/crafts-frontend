@@ -1,8 +1,9 @@
 "use client";
 import { useState } from "react";
 import { useDictionary } from "@/providers/dictionary-provider";
+import RotateText from "@/components/RotateText";
 
-export default function Title() {
+const Title = () => {
   const [showModal, setShowModal] = useState(false);
   const [isChecked, setIsChecked] = useState(false);
   const [showRegistrationModal, setShowRegistrationModal] = useState(false);
@@ -18,7 +19,7 @@ export default function Title() {
 
   return (
     <div>
-      <section className="bg-center w-full flex items-center justify-center min-h-[91vh] bg-no-repeat dark:bg-[url('https://wallpapercave.com/wp/wp7441429.jpg')] bg-[url('https://www.hdwallpapers.in/download/green_white_swirl_lines_4k_hd_abstract-3840x2160.jpg')] bg-gray-700 dark:bg-blend-multiply bg-blend-soft-light">
+      <section className="bg-center w-full flex items-center justify-center min-h-[90vh] bg-no-repeat dark:bg-[url('https://wallpapercave.com/wp/wp7441429.jpg')] bg-[url('https://www.hdwallpapers.in/download/green_white_swirl_lines_4k_hd_abstract-3840x2160.jpg')] bg-gray-700 dark:bg-blend-multiply bg-blend-soft-light">
         <div className="text-center my-6 mx-4">
           <h1 className="mb-8 text-4xl font-extrabold tracking-tight leading-none text-white md:text-5xl lg:text-6xl">
             {dictionary.component.home.title}
@@ -26,11 +27,11 @@ export default function Title() {
           <p className="mb-16 text-lg font-normal text-gray-300 lg:text-lg sm:px-16 lg:px-24 mt-10">
             {dictionary.component.home.description}
           </p>
-          {/*<RotateText/>*/}
-          <div className="flex flex-col gap-4 sm:flex-row sm:justify-center sm:gap-8">
+          <RotateText />
+          <div className="flex flex-col items-center gap-4 sm:flex-row sm:justify-center sm:gap-8">
             <button
               onClick={() => setShowRegistrationModal(true)}
-              className="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-green-500 hover:bg-green-600 dark:bg-green-700 dark:hover:bg-green-800 focus:ring-4 focus:ring-green-600 dark:focus:ring-green-800"
+              className="inline-flex w-fit justify-center items-center py-3 px-5 font-medium text-center text-white rounded-lg bg-green-500 hover:bg-green-600 dark:bg-green-700 dark:hover:bg-green-800"
             >
               {dictionary.component.home.register}
               <svg
@@ -49,7 +50,7 @@ export default function Title() {
             </button>
             <button
               onClick={handleScroll}
-              className="inline-flex justify-center hover:text-gray-900 items-center px-5 text-base font-medium text-center text-white rounded-lg border border-white hover:bg-gray-100 focus:ring-4 focus:ring-gray-100"
+              className="inline-flex w-fit justify-center hover:text-gray-900 items-center py-3 px-5 font-medium text-center text-white rounded-lg border border-white hover:bg-gray-100"
             >
               {dictionary.component.home.readMore}
             </button>
@@ -212,4 +213,6 @@ export default function Title() {
       {/*)}*/}
     </div>
   );
-}
+};
+
+export default Title;

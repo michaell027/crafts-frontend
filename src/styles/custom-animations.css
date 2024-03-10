@@ -13,3 +13,26 @@
         transform: translateX(0);
     }
 }
+
+@keyframes word {
+    0% {
+        transform: translateY(100%);
+    }
+    15% {
+        transform: translateY(-10%);
+        animation-timing-function: ease-out;
+    }
+
+    20% {
+        transform: translateY(0);
+    }
+
+    40%,
+    100% {
+        transform: translateY(-110%);
+    }
+}
+
+.animate-word {
+    animation: word 7s infinite;
+}
