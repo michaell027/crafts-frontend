@@ -66,7 +66,7 @@ const Header = () => {
               {dictionary.component.header.menu.about}
             </Link>
             <Link
-              href={"/contact"}
+              href={"/contact-us"}
               className="font-medium hover:bg-gray-400/30 rounded-md px-3 py-2 dark:hover:bg-gray-600/30"
             >
               {dictionary.component.header.menu.contact}
