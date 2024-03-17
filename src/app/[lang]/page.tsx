@@ -1,5 +1,5 @@
 import type { Locale } from "@/../i18n.config";
-import Title from "@/components/Title";
+import Title from "@/components/homePage/Title";
 
 export default async function Home({
   params: { lang },

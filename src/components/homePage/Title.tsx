@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 import { useDictionary } from "@/providers/dictionary-provider";
-import RotateText from "@/components/RotateText";
+import RotateText from "@/components/homePage/RotateText";
 
 const Title = () => {
   const [showModal, setShowModal] = useState(false);

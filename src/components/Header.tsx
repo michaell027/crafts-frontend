@@ -54,19 +54,19 @@ const Header = () => {
         <>
           <nav className="hidden lg:flex flex-wrap items-center justify-center gap-2 lg:gap-4">
             <Link
-              href="#"
+              href={"/"}
               className="font-medium hover:bg-gray-400/30 rounded-md px-3 py-2 dark:hover:bg-gray-600/30"
             >
               {dictionary.component.header.menu.home}
             </Link>
             <Link
-              href="#"
+              href={"/about-us"}
               className="font-medium hover:bg-gray-400/30 rounded-md px-3 py-2 dark:hover:bg-gray-600/30"
             >
               {dictionary.component.header.menu.about}
             </Link>
             <Link
-              href="#"
+              href={"/contact"}
               className="font-medium hover:bg-gray-400/30 rounded-md px-3 py-2 dark:hover:bg-gray-600/30"
             >
               {dictionary.component.header.menu.contact}

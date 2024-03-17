@@ -3,6 +3,14 @@
     "home": {
       "title": "Home",
       "description": "Welcome to the home page"
+    },
+    "about": {
+      "title": "About us:",
+      "firstParagraph": "Welcome to our website where craftsmen and individuals seeking their expertise converge. If you're curious about the experience craftsmen bring to their craft and are searching for reliable and skilled professionals, you're in the right place.",
+      "secondParagraph": "Our platform creates space for craftsmen from various fields, from carpentry to electrical work, from painting to blacksmithing. These craftsmen are passionate experts who dedicate themselves to their crafts with enthusiasm and precision. Our goal is to provide them with a place where they can showcase their abilities and find clients who appreciate their knowledge and skills.",
+        "thirdParagraph": "For those seeking craftsmen, we've created a simple and effective way to find the right person for your projects. On our website, you'll find an extensive list of skilled craftsmen offering their services. You can browse through their portfolios, read reviews from other satisfied customers, and choose a craftsman who best fits your needs.",
+        "fourthParagraph": "We believe that connecting craftsmen with people who need their work is a great way to build mutually beneficial relationships. Our website is here to make these connections simple and effective. Allow us to help you find the best craft solutions and create a great experience from the outcome.",
+        "fifthParagraph": "We're excited to have you here, and we hope that our platform will help you find the perfect craftsman or enable you to offer your craft services to people in need. Together, we can build a strong community of craftsmen and customers who appreciate the value of well-done work."
     }
   },
   "component": {

@@ -3,6 +3,14 @@
     "home": {
       "title": "Domovská stránka",
       "description": "Vitajte na domovskej stránke"
+    },
+    "about": {
+      "title": "O nás:",
+      "firstParagraph": "Vitajte na našej webstránke, kde sa stretávajú remeselníci a ľudia, ktorí hľadajú ich odbornú prácu. Ak ste zvedaví na skúsenosť, ktorú remeselníci prinášajú do svojho remesla a hľadáte spoľahlivých a kvalifikovaných profesionálov, ste na správnom mieste.",
+      "secondParagraph": "Naša platforma vytvára priestor pre remeselníkov z rôznych oblastí, od tesárstva po elektrikárstvo, od maliarstva po kováčstvo. Títo remeselníci sú vášniví odborníci, ktorí sa venujú svojim remeslám so zanietením a precíznosťou. Naším cieľom je vytvoriť pre nich miesto, kde môžu prezentovať svoje schopnosti a nájsť si klientov, ktorí oceňujú ich vedomosti a zručnosti.",
+      "thirdParagraph": "Pre tých, ktorí hľadajú remeselníkov, sme vytvorili jednoduchý a efektívny spôsob, ako nájsť tú správnu osobu pre svoje projekty. Na našej webstránke nájdete rozsiahly zoznam remeselných odborníkov, ktorí ponúkajú svoje služby. Môžete si prehliadať ich portfóliá, prečítať si recenzie od iných spokojných zákazníkov a vybrať si remeselníka, ktorý najlepšie zodpovedá vašim potrebám.",
+      "fourthParagraph": "Veríme, že spájanie remeselníkov s ľuďmi, ktorí potrebujú ich prácu, je skvelým spôsobom, ako vytvárať vzájomne prospešné vzťahy. Naša webstránka je tu preto, aby tieto spojenia boli jednoduché a efektívne. Dovoľte nám pomôcť vám nájsť najlepšie remeselné riešenia a vytvorte si skvelý zážitok z výsledku.",
+      "fifthParagraph": "Tešíme sa, že vás tu máme a dúfame, že naša platforma vám pomôže nájsť ideálneho remeselníka alebo vám umožní ponúknuť svoje remeselné služby ľuďom, ktorí ich hľadajú. Spolu môžeme vytvoriť pevnú komunitu remeselníkov a zákazníkov, ktorí ocenia hodnotu dobre vykonanej práce."
     }
   },
   "component": {

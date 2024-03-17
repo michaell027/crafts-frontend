@@ -29,13 +29,17 @@ export default async function RootLayout({
   const dictionary = await getDictionary(params.lang);
   return (
     <html lang={params.lang} className="">
-      <body className={"bg-white text-gray-950 w-full min-h-screen"}>
+      <body
+        className={"bg-white text-gray-950 w-full min-h-screen dark:bg-black"}
+      >
         <DictionaryProvider dictionary={dictionary}>
           <SidebarProvider>
             <Header />
             <div className={"flex-row"}>
               <LeftSidebar />
-              {children}
+              <div className={"flex-1 pl-[240px] pt-24 pr-[235px]"}>
+                {children}
+              </div>
               <RightSidebar />
             </div>
           </SidebarProvider>
