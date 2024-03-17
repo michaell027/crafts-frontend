@@ -1,6 +1,6 @@
 import { Locale } from "../../../../i18n.config";
 
-export async function Contact({
+export async function ContactPage({
   params: { lang },
 }: {
   params: { lang: Locale };
@@ -12,4 +12,4 @@ export async function Contact({
   );
 }
 
-export default Contact;
+export default ContactPage;
