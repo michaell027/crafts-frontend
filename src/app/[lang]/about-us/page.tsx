@@ -1,7 +1,7 @@
 import { Locale } from "../../../../i18n.config";
 import { getDictionary } from "@/lib/dictionary";
 
-async function AboutUs({ params: { lang } }: { params: { lang: Locale } }) {
+async function AboutUsPage({ params: { lang } }: { params: { lang: Locale } }) {
   const dictionary = await getDictionary(lang);
   return (
     <main>
@@ -96,4 +96,4 @@ async function AboutUs({ params: { lang } }: { params: { lang: Locale } }) {
   );
 }
 
-export default AboutUs;
+export default AboutUsPage;
