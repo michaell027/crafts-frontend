@@ -9,7 +9,7 @@ export default async function Home({
   return (
     <main>
       <div>
-        <div className="bg-white min-h-screen dark:bg-black pt-[81.5px] lg:pl-[261px] lg:pr-[256px] pr-[64px] pl-[0px]">
+        <div className="bg-white min-h-screen dark:bg-black">
           <div className="flex flex-col w-full">
             <Title />
             {/*<Carousel />*/}

@@ -37,7 +37,7 @@ export default async function RootLayout({
             <Header />
             <div className={"flex-row"}>
               <LeftSidebar />
-              <div className={"flex-1 pl-[240px] pt-24 pr-[235px]"}>
+              <div className={"flex-1 pl-[270px] pt-[80px] pr-[255px]"}>
                 {children}
               </div>
               <RightSidebar />
