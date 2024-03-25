@@ -10,9 +10,13 @@ const LeftSidebar = () => {
   const locale: string = getLocaleFunction(usePathname())();
   const [categories, setCategories] = useState<Category[]>([]);
   const dictionary = useDictionary();
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    getCategories().then((data) => setCategories(data));
+    getCategories().then((data) => {
+      setCategories(data);
+      setIsLoading(false);
+    });
   }, []);
 
   return (
@@ -44,6 +48,18 @@ const LeftSidebar = () => {
             </button>
 
             <ul className="space-y-2 font-medium">
+              {isLoading && (
+                <>
+                  <li>
+                    <div className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-400 dark:hover:bg-gray-700 group left-group">
+                      <div className="animate-pulse w-5 h-5 bg-gray-400 rounded-full"></div>
+                      <span className="ml-4 animate-pulse">
+                        {dictionary.component.leftSidebar.loading}
+                      </span>
+                    </div>
+                  </li>
+                </>
+              )}
               {categories &&
                 categories.map((category: Category) => (
                   <li key={category.publicId}>

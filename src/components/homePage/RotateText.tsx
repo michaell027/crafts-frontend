@@ -5,10 +5,20 @@ import { Category } from "@/models/Category";
 import getCategories from "@/services/categories-service";
 import { getLocaleFunction } from "@/utils/getLocaleFunction";
 import { usePathname } from "next/navigation";
+import "@/styles/custom-animations.scss";
 
 const AnimatedWords = ({ words }: { words: string[] }) => {
-  const animationDuration = words.length * 1.4;
+  const animationDuration = words.length * 1.7;
+  useEffect(() => {
+    const root = document.documentElement;
 
+    root?.style.setProperty(
+      "--words-length",
+      animationDuration.toString() + "s",
+    );
+
+    console.log(root.style.getPropertyValue("--words-length"));
+  }, [words.length]);
   return (
     <div className="relative inline-grid grid-cols-1 grid-rows-1 gap-10 overflow-hidden">
       {words.map((word, index) => (
@@ -16,8 +26,7 @@ const AnimatedWords = ({ words }: { words: string[] }) => {
           key={index}
           className={`animate-word animate-word-delay-${index} col-span-full row-span-full`}
           style={{
-            animationDuration: `${animationDuration}s`,
-            animationDelay: `-${index * 1.4}s`,
+            animationDelay: `-${index * 1.7}s`,
           }}
         >
           {word}

@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import "./globals.css";
+import "./globals.scss";
 import React from "react";
 import { Locale, i18n } from "@/../i18n.config";
 
@@ -37,7 +37,11 @@ export default async function RootLayout({
             <Header />
             <div className={"flex-row"}>
               <LeftSidebar />
-              <div className={"flex-1 pl-[270px] pt-[80px] pr-[255px]"}>
+              <div
+                className={
+                  "flex-1 lg:pl-[260px] pt-[80px] lg:pr-[255px] pl-0 pr-[60px]"
+                }
+              >
                 {children}
               </div>
               <RightSidebar />

@@ -5,7 +5,7 @@ const DEFAULT_API_URL = process.env.NEXT_PUBLIC_ENV_VARIABLE_API_URL;
 
 export default async function getCategories(): Promise<Category[]> {
   try {
-    const response = await axios.get(`${DEFAULT_API_URL}categories`);
+    const response = await axios.get(`${DEFAULT_API_URL}Category/categories`);
     console.log(response.data);
     return response.data as Category[];
   } catch (error) {

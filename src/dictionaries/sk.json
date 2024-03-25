@@ -23,7 +23,8 @@
           }
         },
     "leftSidebar" : {
-      "categories": "Kategórie"
+      "categories": "Kategórie",
+      "loading": "Načítavam..."
     },
     "rightSidebar" : {
       "craftsman" : "Ak ste remeselník,",

@@ -4,9 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="214e5851-9dcb-470f-aecf-f36a73c2dace" name="Changes" comment="small changes">
+    <list default="true" id="214e5851-9dcb-470f-aecf-f36a73c2dace" name="Changes" comment="small changes v4">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/[lang]/contact/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/[lang]/contact/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/[lang]/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/[lang]/globals.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/[lang]/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/[lang]/layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/LeftSidebar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/LeftSidebar.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/homePage/RotateText.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/homePage/RotateText.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dictionaries/en.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/dictionaries/en.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dictionaries/sk.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/dictionaries/sk.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/categories-service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/categories-service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/custom-animations.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/custom-animations.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,7 +105,7 @@
       <workItem from="1710002398767" duration="5294000" />
       <workItem from="1710581806060" duration="547000" />
       <workItem from="1710620894711" duration="28000" />
-      <workItem from="1710699878886" duration="3585000" />
+      <workItem from="1710699878886" duration="10203000" />
     </task>
     <task id="LOCAL-00001" summary="added i18n">
       <option name="closed" value="true" />
@@ -162,7 +171,31 @@
       <option name="project" value="LOCAL" />
       <updated>1710703877313</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="small changes v2">
+      <option name="closed" value="true" />
+      <created>1710703987021</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1710703987021</updated>
+    </task>
+    <task id="LOCAL-00010" summary="small changes v3">
+      <option name="closed" value="true" />
+      <created>1710704308434</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1710704308434</updated>
+    </task>
+    <task id="LOCAL-00011" summary="small changes v4">
+      <option name="closed" value="true" />
+      <created>1710704480069</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1710704480069</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -177,6 +210,9 @@
     <MESSAGE value="added api url" />
     <MESSAGE value="added about us page" />
     <MESSAGE value="small changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="small changes" />
+    <MESSAGE value="small changes v2" />
+    <MESSAGE value="small changes v3" />
+    <MESSAGE value="small changes v4" />
+    <option name="LAST_COMMIT_MESSAGE" value="small changes v4" />
   </component>
 </project>

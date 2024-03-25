@@ -23,7 +23,8 @@
       }
     },
     "leftSidebar": {
-      "categories": "Categories"
+      "categories": "Categories",
+      "loading": "Loading..."
     },
     "rightSidebar" : {
       "craftsman" : "If you are craftsman,",
