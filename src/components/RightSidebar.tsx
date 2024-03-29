@@ -6,30 +6,22 @@ const RightSidebar = () => {
   const [showMaxiSidebar, setShowMaxiSidebar] = useState<boolean>(false);
   const dictionary = useDictionary();
 
-  const handleMouseEnter = () => {
-    setShowMaxiSidebar(true);
-  };
-
-  const handleMouseLeave = () => {
-    setShowMaxiSidebar(false);
-  };
+  function handleOpenSidebar() {
+    setShowMaxiSidebar(!showMaxiSidebar);
+  }
 
   useEffect(() => {
     const handleResize = () => {
-      const miniSidebar = document.getElementById("mini-right-sidebar");
-      const maxiSidebar = document.getElementById("maxi-right-sidebar");
-      if (window.innerWidth >= 1023 && miniSidebar && maxiSidebar) {
-        miniSidebar.classList.add("hidden");
-        maxiSidebar.classList.remove("hidden");
-      } else if (window.innerWidth < 1023 && miniSidebar && maxiSidebar) {
-        miniSidebar.classList.remove("hidden");
-        maxiSidebar.classList.add("hidden");
+      if (window.innerWidth > 1024) {
+        setShowMaxiSidebar(true);
+      } else {
+        setShowMaxiSidebar(false);
       }
     };
 
     handleResize();
-    window.addEventListener("resize", handleResize);
 
+    window.addEventListener("resize", handleResize);
     return () => {
       window.removeEventListener("resize", handleResize);
     };
@@ -39,11 +31,10 @@ const RightSidebar = () => {
     <div>
       <div
         id="maxi-right-sidebar"
-        className={`sidebar ${showMaxiSidebar ? "" : "hidden"}`}
-        onMouseLeave={handleMouseLeave}
+        className={`sidebar ${showMaxiSidebar ? "block" : "hidden"}`}
       >
         <aside
-          className="fixed top-[81.5px] right-0 z-10 w-64 h-screen text-gray-700 transition-transform bg-[#F3F9FF]/95 border-gray-300 border-l-2 dark:border-gray-600/30 dark:bg-[#0d1017]/95 dark:text-gray-300"
+          className="fixed top-[81.5px] lg:right-0 right-[64px] z-10 w-64 h-screen text-gray-700 transition-transform bg-[#F3F9FF]/95 border-gray-300 border-l-2 dark:border-gray-600/30 dark:bg-[#0d1017]/95 dark:text-gray-300"
           aria-label="Sidebar"
         >
           <div className="h-full px-3 py-4 overflow-y-auto">
@@ -140,11 +131,7 @@ const RightSidebar = () => {
           </div>
         </aside>
       </div>
-      <div
-        id="mini-right-sidebar"
-        className={`mini-right-sidebar ${showMaxiSidebar ? "hidden" : ""}`}
-        onMouseEnter={handleMouseEnter}
-      >
+      <div id="mini-right-sidebar" className="block lg:hidden">
         <aside
           className="fixed top-[81.5px] right-0 z-20 w-16 h-screen"
           aria-label="Sidebar"
@@ -152,21 +139,41 @@ const RightSidebar = () => {
           <div className="h-full w-full  px-3 py-4 overflow-y-auto bg-[#F3F9FF]/95 border-gray-300 border-l-2 dark:border-gray-600/30 dark:bg-[#0d1017]/95 dark:text-gray-300">
             <ul className="space-y-2 font-medium w-full">
               <li>
-                <button className="flex items-center justify-center p-2 rounded-lg dark hover:bg-gray-100 dark:hover:bg-gray-700 group">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    strokeWidth={1.5}
-                    stroke="currentColor"
-                    className="w-6 h-6 animated"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="M18.75 19.5l-7.5-7.5 7.5-7.5m-6 15L5.25 12l7.5-7.5"
-                    />
-                  </svg>
+                <button
+                  onClick={handleOpenSidebar}
+                  className="flex items-center justify-center p-2 rounded-lg dark hover:bg-gray-100 dark:hover:bg-gray-700 group"
+                >
+                  {!showMaxiSidebar ? (
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      strokeWidth={1.5}
+                      stroke="currentColor"
+                      className="w-6 h-6 animated"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M18.75 19.5l-7.5-7.5 7.5-7.5m-6 15L5.25 12l7.5-7.5"
+                      />
+                    </svg>
+                  ) : (
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      strokeWidth={1.5}
+                      stroke="currentColor"
+                      className="w-6 h-6 animated"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M5.25 19.5l7.5-7.5-7.5-7.5m6 15l7.5-7.5-7.5-7.5"
+                      />
+                    </svg>
+                  )}
                 </button>
               </li>
             </ul>

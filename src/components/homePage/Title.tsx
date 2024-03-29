@@ -20,8 +20,8 @@ const Title = () => {
   return (
     <div>
       <section className="bg-center w-full flex items-center justify-center min-h-[90vh] bg-no-repeat dark:bg-[url('https://wallpapercave.com/wp/wp7441429.jpg')] bg-[url('https://www.hdwallpapers.in/download/green_white_swirl_lines_4k_hd_abstract-3840x2160.jpg')] bg-gray-700 dark:bg-blend-multiply bg-blend-soft-light">
-        <div className="text-center my-20 mx-4">
-          <h1 className="mb-8 text-4xl font-extrabold tracking-tight leading-none text-white md:text-5xl lg:text-6xl">
+        <div className="text-center my-auto mx-4">
+          <h1 className="mb-8 text-4xl mt-16 font-extrabold tracking-tight leading-none text-white md:text-5xl lg:text-6xl">
             {dictionary.component.home.title}
           </h1>
           <p className="mb-16 text-lg font-normal text-gray-300 lg:text-lg sm:px-16 lg:px-24 mt-10">

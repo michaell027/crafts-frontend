@@ -4,18 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="214e5851-9dcb-470f-aecf-f36a73c2dace" name="Changes" comment="small changes v4">
+    <list default="true" id="214e5851-9dcb-470f-aecf-f36a73c2dace" name="Changes" comment="fix styling, added scss">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/[lang]/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/[lang]/globals.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/[lang]/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/[lang]/layout.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/LeftSidebar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/LeftSidebar.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/homePage/RotateText.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/homePage/RotateText.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dictionaries/en.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/dictionaries/en.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dictionaries/sk.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/dictionaries/sk.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/RightSidebar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/RightSidebar.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/homePage/Title.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/homePage/Title.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/services/categories-service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/categories-service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/custom-animations.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/custom-animations.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,7 +98,7 @@
       <workItem from="1710002398767" duration="5294000" />
       <workItem from="1710581806060" duration="547000" />
       <workItem from="1710620894711" duration="28000" />
-      <workItem from="1710699878886" duration="10203000" />
+      <workItem from="1710699878886" duration="12769000" />
     </task>
     <task id="LOCAL-00001" summary="added i18n">
       <option name="closed" value="true" />
@@ -195,7 +188,15 @@
       <option name="project" value="LOCAL" />
       <updated>1710704480069</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="fix styling, added scss">
+      <option name="closed" value="true" />
+      <created>1711402646986</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1711402646986</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -213,6 +214,7 @@
     <MESSAGE value="small changes v2" />
     <MESSAGE value="small changes v3" />
     <MESSAGE value="small changes v4" />
-    <option name="LAST_COMMIT_MESSAGE" value="small changes v4" />
+    <MESSAGE value="fix styling, added scss" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix styling, added scss" />
   </component>
 </project>
