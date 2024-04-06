@@ -5,10 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="214e5851-9dcb-470f-aecf-f36a73c2dace" name="Changes" comment="fix styling, added scss">
+      <change beforePath="$PROJECT_DIR$/.idea/prettier.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/prettier.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/[lang]/about-us/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/[lang]/about-us/page.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/RightSidebar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/RightSidebar.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/homePage/Title.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/homePage/Title.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/categories-service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/categories-service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ThemeSwitcher.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ThemeSwitcher.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,20 +45,31 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "D:/school/java/crafts",
+    "last_opened_file_path": "C:/Users/michaela.majorosova/Desktop/crafts-frontend",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.stylelint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.stylelint": "",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "npm.dev.executor": "Run",
-    "prettierjs.PrettierConfiguration.Package": "C:\\Users\\misel\\AppData\\Roaming\\npm\\node_modules\\prettier",
-    "settings.editor.selected.configurable": "settings.javascript.prettier",
-    "ts.external.directory.path": "C:\\Users\\misel\\OneDrive\\Počítač\\project-remeslo\\frontend\\crafts_ui\\node_modules\\typescript\\lib",
+    "prettierjs.PrettierConfiguration.Package": "C:\\Users\\michaela.majorosova\\AppData\\Roaming\\npm\\node_modules\\prettier",
+    "settings.editor.selected.configurable": "PluginSettings",
+    "ts.external.directory.path": "C:\\Users\\michaela.majorosova\\Desktop\\crafts-frontend\\node_modules\\typescript\\lib",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="ReactDesignerToolWindowState">
+    <option name="myId2Visible">
+      <map>
+        <entry key="com.intellij.reactbuddy.reactComponents" value="false" />
+        <entry key="com.intellij.reactbuddy.reactInspector" value="false" />
+        <entry key="com.intellij.reactbuddy.storybook" value="false" />
+      </map>
+    </option>
+  </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\misel\OneDrive\Počítač\project-remeslo\frontend\crafts_ui\src\components\homePage" />
@@ -79,6 +91,13 @@
       <method v="2" />
     </configuration>
   </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-1d06a55b98c1-74d2a5396914-JavaScript-WS-241.14494.235" />
+      </set>
+    </attachedChunks>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -99,6 +118,10 @@
       <workItem from="1710581806060" duration="547000" />
       <workItem from="1710620894711" duration="28000" />
       <workItem from="1710699878886" duration="12769000" />
+      <workItem from="1712397964129" duration="73000" />
+      <workItem from="1712398047853" duration="32000" />
+      <workItem from="1712398090937" duration="37000" />
+      <workItem from="1712398138538" duration="10092000" />
     </task>
     <task id="LOCAL-00001" summary="added i18n">
       <option name="closed" value="true" />

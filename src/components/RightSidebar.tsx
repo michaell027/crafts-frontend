@@ -67,7 +67,7 @@ const RightSidebar = () => {
                 </button>
               </li>
               <div className="divider before:bg-black/20 after:bg-black/20"></div>
-              <li className="flex flex-col justify-center items-center text-black dark:text-gray-400">
+              <li className="flex flex-col justify-center items-center">
                 <p className="text-center">
                   {dictionary.component.rightSidebar.client}
                 </p>
@@ -95,7 +95,7 @@ const RightSidebar = () => {
 
               <div className="divider before:bg-black/20 after:bg-black/20"></div>
 
-              <div className="fixed bottom-0 flex flex-col items-center justify-center text-black dark:text-gray-400">
+              <div className="fixed bottom-0 flex flex-col items-center justify-center">
                 <p className="text-center text-sm">
                   {dictionary.component.rightSidebar.loginDesc}
                 </p>
@@ -136,7 +136,7 @@ const RightSidebar = () => {
           className="fixed top-[81.5px] right-0 z-20 w-16 h-screen"
           aria-label="Sidebar"
         >
-          <div className="h-full w-full  px-3 py-4 overflow-y-auto bg-[#F3F9FF]/95 border-gray-300 border-l-2 dark:border-gray-600/30 dark:bg-[#0d1017]/95 dark:text-gray-300">
+          <div className="h-full w-full  px-3 py-4 overflow-y-auto bg-[#F3F9FF]/95 border-gray-300 border-l-2 dark:border-gray-600/30 dark:bg-[#0d1017]/95">
             <ul className="space-y-2 font-medium w-full">
               <li>
                 <button
