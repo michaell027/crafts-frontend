@@ -102,7 +102,7 @@ async function LoginPage({ params: { lang } }: { params: { lang: Locale } }) {
                   href="#"
                   className="text-sm ml-2 hover:text-blue-500 cursor-pointer hover:-translate-y-1 duration-500 transition-all"
                 >
-                  Don't have an account yet?
+                  Don&apos;t have an account yet?
                 </a>
               </div>
             </form>

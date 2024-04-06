@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="214e5851-9dcb-470f-aecf-f36a73c2dace" name="Changes" comment="create contact us page">
-      <change afterPath="$PROJECT_DIR$/src/app/[lang]/login/forgot-password/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/[lang]/login/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/[lang]/globals.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/[lang]/globals.scss" afterDir="false" />
+    <list default="true" id="214e5851-9dcb-470f-aecf-f36a73c2dace" name="Changes" comment="create reset password page">
+      <change beforePath="$PROJECT_DIR$/src/app/[lang]/login/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/[lang]/login/page.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -132,7 +129,7 @@
       <workItem from="1712397964129" duration="73000" />
       <workItem from="1712398047853" duration="32000" />
       <workItem from="1712398090937" duration="37000" />
-      <workItem from="1712398138538" duration="17518000" />
+      <workItem from="1712398138538" duration="17652000" />
     </task>
     <task id="LOCAL-00001" summary="added i18n">
       <option name="closed" value="true" />
@@ -238,7 +235,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712417174249</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="create reset password page">
+      <option name="closed" value="true" />
+      <created>1712431279245</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1712431279245</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -258,6 +263,7 @@
     <MESSAGE value="small changes v4" />
     <MESSAGE value="fix styling, added scss" />
     <MESSAGE value="create contact us page" />
-    <option name="LAST_COMMIT_MESSAGE" value="create contact us page" />
+    <MESSAGE value="create reset password page" />
+    <option name="LAST_COMMIT_MESSAGE" value="create reset password page" />
   </component>
 </project>
