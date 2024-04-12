@@ -22,12 +22,10 @@ async function ContactUsPage({
             </div>
             <div className="grid text-gray-700 lg:grid-cols-1 grid-cols-1 gap-3 2xl:gap-5 2xl:grid-cols-2 md:grid-cols-2 mt-5">
               <input
-                className="w-full bg-gray-100 p-3 rounded-lg focus:outline-none focus:shadow-outline"
                 type="text"
                 placeholder="First Name*"
               />
               <input
-                className="w-full bg-gray-100 p-3 rounded-lg focus:outline-none focus:shadow-outline"
                 type="text"
                 placeholder="Last Name*"
               />

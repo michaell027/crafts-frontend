@@ -7,6 +7,7 @@ async function LoginPage({ params: { lang } }: { params: { lang: Locale } }) {
   return (
     <main>
       <LoginForm />
+
     </main>
   );
 }

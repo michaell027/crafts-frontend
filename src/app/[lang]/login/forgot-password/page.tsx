@@ -36,17 +36,15 @@ async function ForgotPasswordPage({
                 <IoIosArrowForward size={25} />
               </div>
             </div>
-            <div className="w-1/2 flex gap-5 flex-col items-center">
+            <div className="w-1/2 flex gap-4 flex-col items-center">
               <input
                 type="email"
                 id="email"
                 name="email"
-                className="py-3 px-4 block w-full border-2 border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 shadow-sm"
                 required
               />
               <button
-                className="font-bold px-4 py-2 bg-green-500 dark:bg-green-800 text-gray-100 rounded-lg dark:text-white hover:bg-green-600 dark:hover:bg-green-900
-                      focus:outline-none focus:shadow-outline"
+                className="font-bold custom-button"
               >
                 Reset password
               </button>

@@ -19,7 +19,6 @@ const PasswordInput = () => {
     <>
       <div className="relative text-gray-700">
         <input
-          className="w-full bg-gray-100 p-3 rounded-lg focus:outline-none focus:shadow-outline"
           type={showPassword ? "text" : "password"}
           placeholder="Password"
         />
@@ -44,9 +43,8 @@ const RegisterCraftsmanForm = () => {
 
   return (
     <main>
-      <>
-        <div className="min-w-[900px] min-h-[90vh] flex items-center justify-center px-2 py-2">
-          <div className="bg-green-300/20 text-white rounded-3xl shadow-xl w-full overflow-hidden">
+        <div className="flex items-center justify-center w-full h-[89vh]">
+          <div className="bg-green-300/20 text-white rounded-3xl shadow-xl overflow-hidden w-[90%]">
             <div className="md:flex w-full">
               <div className="hidden md:block w-1/2 py-10 px-10 bg-[#0d1017]">
                 <div className="w-full flex flex-col items-center">
@@ -108,7 +106,7 @@ const RegisterCraftsmanForm = () => {
                 </div>
               </div>
               <div className="w-full md:w-1/2 py-10 px-5 md:px-10">
-                <div className="text-center mb-10">
+                <div className="text-center mb-6">
                   <h1 className="font-bold text-3xl pb-2 text-white">
                     CRAFTSMAN REGISTER
                   </h1>
@@ -151,50 +149,28 @@ const RegisterCraftsmanForm = () => {
                   <div className="divider">OR</div>
                   <p>enter your information to register</p>
                 </div>
-                <div>
-                  {/*<div className="flex -mx-3">*/}
-                  {/*    <div className="w-1/2 px-3 mb-5">*/}
-                  {/*        <label htmlFor="" className="text-xs font-semibold px-1">First*/}
-                  {/*            name</label>*/}
-                  {/*        <div className="flex">*/}
-                  {/*            <div*/}
-                  {/*                className="w-10 z-10 pl-1 text-center pointer-events-none flex items-center justify-center">*/}
-                  {/*                <i className="mdi mdi-account-outline text-gray-400 text-lg"></i>*/}
-                  {/*            </div>*/}
-                  {/*            <input type="text"*/}
-                  {/*                   className="w-full -ml-10 pl-10 pr-3 py-2 rounded-lg border-2 border-gray-200 outline-none focus:border-indigo-500"*/}
-                  {/*                   placeholder="John"></input>*/}
-                  {/*        </div>*/}
-                  {/*    </div>*/}
-                  {/*    <div className="w-1/2 px-3 mb-5">*/}
-                  {/*        <label htmlFor="" className="text-xs font-semibold px-1">Last*/}
-                  {/*            name</label>*/}
-                  {/*        <div className="flex">*/}
-                  {/*            <div*/}
-                  {/*                className="w-10 z-10 pl-1 text-center pointer-events-none flex items-center justify-center">*/}
-                  {/*                <i className="mdi mdi-account-outline text-gray-400 text-lg"></i>*/}
-                  {/*            </div>*/}
-                  {/*            <input type="text"*/}
-                  {/*                   className="w-full -ml-10 pl-10 pr-3 py-2 rounded-lg border-2 border-gray-200 outline-none focus:border-indigo-500"*/}
-                  {/*                   placeholder="Smith"></input>*/}
-                  {/*        </div>*/}
-                  {/*    </div>*/}
-                  {/*</div>*/}
-                  <div className="flex -mx-3">
-                    <div className="w-full px-3 mb-5">
+                <div className="text-gray-700">
+                  <div className="flex items-center h-auto">
+                    <div className="w-full mb-4">
                       <input
                         type="email"
                         placeholder="Email adress"
-                        className="input input-bordered w-full"
                       />
                     </div>
                   </div>
-                  <div className="flex -mx-3">
-                    <div className="w-full px-3 mb-12">
+                  <div className="flex">
+                    <div className="w-full mb-4">
                       <PasswordInput />
                     </div>
                   </div>
-                  <div className="flex -mx-3">
+                    <div className="flex items-center h-auto">
+                      <div className="w-full mb-6">
+                        <input
+                            type="password"
+                            placeholder="Repeat password"
+                        />
+                      </div>
+                    </div>
                     <div className="w-full px-3 mb-5">
                       <button
                         onClick={handleContinue}
@@ -207,9 +183,7 @@ const RegisterCraftsmanForm = () => {
                 </div>
               </div>
             </div>
-          </div>
         </div>
-      </>
     </main>
   );
 };

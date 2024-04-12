@@ -51,7 +51,7 @@ const RightSidebar = () => {
                   onClick={() => {
                     window.location.href = "/join-us";
                   }}
-                  className="flex items-center p-2 mt-4 my-2 bg-green-500 dark:bg-green-800 text-gray-100 rounded-lg dark:text-white hover:bg-green-600 dark:hover:bg-green-900 group"
+                  className="custom-button"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -81,7 +81,7 @@ const RightSidebar = () => {
                   {dictionary.component.rightSidebar.clientDesc}
                 </p>
 
-                <button className="flex items-center p-2 mt-4 my-2 bg-green-500 dark:bg-green-800 text-gray-100 rounded-lg dark:text-white hover:bg-green-600 dark:hover:bg-green-900 group">
+                <button className="custom-button">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="16"
@@ -107,7 +107,7 @@ const RightSidebar = () => {
                 </p>
                 <li className="end-0">
                   <Link href={"/login"}>
-                    <button className=" flex items-center p-2 my-4 bg-green-500 dark:bg-green-800 text-gray-100 rounded-lg dark:text-white hover:bg-green-600 dark:hover:bg-green-900 group">
+                    <button className="custom-button">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="16"
@@ -146,7 +146,7 @@ const RightSidebar = () => {
               <li>
                 <button
                   onClick={handleOpenSidebar}
-                  className="flex items-center justify-center p-2 rounded-lg dark hover:bg-gray-100 dark:hover:bg-gray-700 group"
+                  className="flex items-center justify-center p-2 rounded-lg dark hover:bg-gray-100 dark:hover:bg-gray-700"
                 >
                   {!showMaxiSidebar ? (
                     <svg
