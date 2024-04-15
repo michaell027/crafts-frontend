@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import Link from "next/link";
+import { FaSignInAlt } from "react-icons/fa";
 
 const PasswordInput = () => {
   const [showPassword, setShowPassword] = useState(false);
@@ -11,10 +12,7 @@ const PasswordInput = () => {
 
   return (
     <div className="relative">
-      <input
-        type={showPassword ? "text" : "password"}
-        placeholder="Password"
-      />
+      <input type={showPassword ? "text" : "password"} placeholder="Password" />
       <button
         type="button"
         onClick={toggleShowPassword}
@@ -68,14 +66,14 @@ const LoginForm = () => {
     <div className="w-full">
       <section className="min-h-[70vh] flex items-stretch text-white m-10">
         <div
-          className="lg:flex w-1/2 hidden bg-gray-500 bg-no-repeat bg-cover rounded-l-3xl relative items-center"
+          className="flex xl:w-1/2 w-[90%] bg-no-repeat bg-cover rounded-l-lg relative items-center"
           style={{
             backgroundImage:
               "url(https://images.unsplash.com/photo-1577495508048-b635879837f1?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=675&q=80)",
           }}
         >
           <div className="absolute bg-black opacity-60 inset-0 z-0"></div>
-          <div className="w-full px-24 z-10">
+          <div className="w-full ml-10 z-10">
             <h1 className="text-6xl font-bold text-left tracking-wide">
               Log In
             </h1>
@@ -146,20 +144,10 @@ const LoginForm = () => {
               </button>
             )}
           </div>
-          <div className="bottom-0 absolute p-4 text-center right-0 left-0 flex justify-center space-x-4"></div>
         </div>
-        <div className="lg:w-1/2 bg-green-300/20 rounded-r-3xl w-full flex items-center justify-center text-center md:px-16 px-0 z-0">
-          <div
-            className="absolute lg:hidden z-10 inset-0 bg-gray-500 bg-no-repeat bg-cover items-center"
-            style={{
-              backgroundImage:
-                "url(https://images.unsplash.com/photo-1577495508048-b635879837f1?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=675&q=80)",
-            }}
-          >
-            <div className="absolute bg-black opacity-60 inset-0 z-0"></div>
-          </div>
-          <div className="w-full py-6 z-20">
-            <div className="flex flex-col items-center justify-center gap-4 max-w-sm pb-4 ">
+        <div className="xl:w-1/2 w-full bg-green-300/20 rounded-r-lg flex items-center justify-center text-center px-0 z-0">
+          <div className="w-full pb-6 z-20">
+            <div className="flex flex-col items-center justify-center gap-4 pb-4">
               <button
                 type="button"
                 className="py-2 px-4 flex justify-center items-center  bg-blue-600 hover:bg-blue-700 focus:ring-blue-500 focus:ring-offset-blue-200 text-white w-56 transition ease-in duration-200 text-center font-semibold text-sm shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg "
@@ -194,14 +182,10 @@ const LoginForm = () => {
                 Sign in with Google
               </button>
             </div>
-            <div className="divider"></div>
-            <p className="text-gray-100">or use email your account</p>
-            <form className="sm:w-2/3 w-full px-4 lg:px-0 mx-auto text-gray-700">
-              <div className="pb-2 pt-4">
-                <input
-                  type="email"
-                  placeholder="Email adress"
-                />
+            <p className="text-gray-100">or use email to your account</p>
+            <form className="w-full px-12 mx-auto text-gray-700 flex flex-col pt-4">
+              <div className="">
+                <input type="email" placeholder="Email adress" />
               </div>
               <div className="pb-2 pt-4">
                 <PasswordInput />
@@ -214,8 +198,9 @@ const LoginForm = () => {
                   Forgot your password?
                 </Link>
               </div>
-              <div className="px-4 flex items-center justify-center">
-                <button className="custom-button font-bold">
+              <div className="flex items-center justify-center">
+                <button className="custom-button font-bold gap-3">
+                  <FaSignInAlt />
                   Sign In
                 </button>
               </div>
