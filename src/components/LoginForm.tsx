@@ -1,8 +1,15 @@
 "use client";
-import { useState } from "react";
+import React, { Dispatch, SetStateAction, useEffect, useState } from "react";
 import Link from "next/link";
+import { LoginRequest } from "@/models/LoginRequest";
+import login from "@/services/auth-service";
+import { useUser } from "@/providers/user-provider";
 
-const PasswordInput = () => {
+interface PasswordInputProps {
+  setPassword: Dispatch<SetStateAction<string>>;
+}
+
+const PasswordInput: React.FC<PasswordInputProps> = ({ setPassword }) => {
   const [showPassword, setShowPassword] = useState(false);
 
   const toggleShowPassword = () => {
@@ -14,6 +21,7 @@ const PasswordInput = () => {
       <input
         type={showPassword ? "text" : "password"}
         placeholder="Password"
+        onChange={(event) => setPassword(event.target.value)}
       />
       <button
         type="button"
@@ -64,6 +72,28 @@ const PasswordInput = () => {
 const LoginForm = () => {
   const [isUser, setIsUser] = useState(true);
   const [isCraftsman, setIsCraftsman] = useState(false);
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const { setUsername } = useUser();
+
+  async function loginUser(event: React.FormEvent<HTMLFormElement>) {
+    event.preventDefault();
+    let loginRequest: LoginRequest = {
+      email: email,
+      password: password,
+      role: 1,
+    };
+
+    try {
+      const loggedInUser = await login(loginRequest);
+      setUsername(loggedInUser.user.userName as string | null);
+      localStorage.setItem("token", loggedInUser.token);
+      localStorage.setItem("refreshToken", loggedInUser.refreshToken);
+    } catch (error) {
+      console.error("Login failed:", error);
+    }
+  }
+
   return (
     <div className="w-full">
       <section className="min-h-[70vh] flex items-stretch text-white m-10">
@@ -196,15 +226,19 @@ const LoginForm = () => {
             </div>
             <div className="divider"></div>
             <p className="text-gray-100">or use email your account</p>
-            <form className="sm:w-2/3 w-full px-4 lg:px-0 mx-auto text-gray-700">
+            <form
+              className="sm:w-2/3 w-full px-4 lg:px-0 mx-auto text-gray-700"
+              onSubmit={(event) => loginUser(event)}
+            >
               <div className="pb-2 pt-4">
                 <input
                   type="email"
                   placeholder="Email adress"
+                  onChange={(event) => setEmail(event.target.value)}
                 />
               </div>
               <div className="pb-2 pt-4">
-                <PasswordInput />
+                <PasswordInput setPassword={setPassword} />
               </div>
               <div className="text-right text-gray-200">
                 <Link
@@ -215,7 +249,7 @@ const LoginForm = () => {
                 </Link>
               </div>
               <div className="px-4 flex items-center justify-center">
-                <button className="custom-button font-bold">
+                <button type="submit" className="custom-button font-bold">
                   Sign In
                 </button>
               </div>

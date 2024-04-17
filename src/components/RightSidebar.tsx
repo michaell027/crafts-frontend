@@ -2,10 +2,12 @@
 import { useEffect, useState } from "react";
 import { useDictionary } from "@/providers/dictionary-provider";
 import Link from "next/link";
+import { useUser } from "@/providers/user-provider";
 
 const RightSidebar = () => {
   const [showMaxiSidebar, setShowMaxiSidebar] = useState<boolean>(false);
   const dictionary = useDictionary();
+  const { username } = useUser();
 
   function handleOpenSidebar() {
     setShowMaxiSidebar(!showMaxiSidebar);
@@ -105,6 +107,7 @@ const RightSidebar = () => {
                 <p className="text-center text-sm">
                   {dictionary.component.rightSidebar.loginDesc}
                 </p>
+                {username}
                 <li className="end-0">
                   <Link href={"/login"}>
                     <button className="custom-button">
