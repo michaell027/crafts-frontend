@@ -1,9 +1,17 @@
 "use client";
-import { useState } from "react";
+import React, { Dispatch, SetStateAction, useEffect, useState } from "react";
 import Link from "next/link";
-import { FaSignInAlt } from "react-icons/fa";
+import {FaEye, FaEyeSlash, FaSignInAlt} from "react-icons/fa";
+import { LoginRequest } from "@/models/LoginRequest";
+import login from "@/services/auth-service";
+import { useUser } from "@/providers/user-provider";
+import {GrUserManager, GrUserWorker} from "react-icons/gr";
 
-const PasswordInput = () => {
+interface PasswordInputProps {
+  setPassword: Dispatch<SetStateAction<string>>;
+}
+
+const PasswordInput: React.FC<PasswordInputProps> = ({ setPassword }) => {
   const [showPassword, setShowPassword] = useState(false);
 
   const toggleShowPassword = () => {
@@ -12,47 +20,20 @@ const PasswordInput = () => {
 
   return (
     <div className="relative">
-      <input type={showPassword ? "text" : "password"} placeholder="Password" />
+      <input
+        type={showPassword ? "text" : "password"}
+        placeholder="Password"
+        onChange={(event) => setPassword(event.target.value)}
+      />
       <button
         type="button"
         onClick={toggleShowPassword}
         className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-transparent border-none outline-none cursor-pointer"
       >
         {showPassword ? (
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            strokeWidth={1.5}
-            stroke="currentColor"
-            className="w-6 h-6"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              d="M3.98 8.223A10.477 10.477 0 001.934 12C3.226 16.338 7.244 19.5 12 19.5c.993 0 1.953-.138 2.863-.395M6.228 6.228A10.45 10.45 0 0112 4.5c4.756 0 8.773 3.162 10.065 7.498a10.523 10.523 0 01-4.293 5.774M6.228 6.228L3 3m3.228 3.228l3.65 3.65m7.894 7.894L21 21m-3.228-3.228l-3.65-3.65m0 0a3 3 0 10-4.243-4.243m4.242 4.242L9.88 9.88"
-            />
-          </svg>
+          <FaEyeSlash />
         ) : (
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            strokeWidth={1.5}
-            stroke="currentColor"
-            className="w-6 h-6"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z"
-            />
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
-            />
-          </svg>
+          <FaEye />
         )}
       </button>
     </div>
@@ -62,62 +43,53 @@ const PasswordInput = () => {
 const LoginForm = () => {
   const [isUser, setIsUser] = useState(true);
   const [isCraftsman, setIsCraftsman] = useState(false);
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const { setUsername } = useUser();
+
+  async function loginUser(event: React.FormEvent<HTMLFormElement>) {
+    event.preventDefault();
+    let loginRequest: LoginRequest = {
+      email: email,
+      password: password,
+      role: 1,
+    };
+
+    try {
+      const loggedInUser = await login(loginRequest);
+      setUsername(loggedInUser.user.userName as string | null);
+      localStorage.setItem("token", loggedInUser.token);
+      localStorage.setItem("refreshToken", loggedInUser.refreshToken);
+    } catch (error) {
+      console.error("Login failed:", error);
+    }
+  }
+
   return (
     <div className="w-full">
-      <section className="min-h-[70vh] flex items-stretch text-white m-10">
+      <section className="min-h-[600px] flex xl:flex-row flex-col w-full text-white p-10">
         <div
-          className="flex xl:w-1/2 w-[90%] bg-no-repeat bg-cover rounded-l-lg relative items-center"
+          className="flex space-y-4 xl:w-1/2 w-[100%] xl:py-0 rounded-t-lg py-10 bg-no-repeat bg-cover xl:rounded-l-lg items-center"
           style={{
             backgroundImage:
               "url(https://images.unsplash.com/photo-1577495508048-b635879837f1?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=675&q=80)",
           }}
         >
           <div className="absolute bg-black opacity-60 inset-0 z-0"></div>
-          <div className="w-full ml-10 z-10">
-            <h1 className="text-6xl font-bold text-left tracking-wide">
+          <div className="w-full ml-10 z-10 text-center xl:text-left">
+            <h1 className="text-6xl font-bold text-center xl:text-left tracking-wide">
               Log In
             </h1>
-            <div className="flex flex-row items-center gap-2">
+            <div className="flex flex-row w-full justify-center xl:justify-start items-center gap-2">
               <p className="text-2xl my-4">as</p>
               {isUser ? (
                 <>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    strokeWidth={1.5}
-                    stroke="currentColor"
-                    className="w-10 h-10"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z"
-                    />
-                  </svg>
+                  <GrUserManager size={30} />
                   <p className="text-2xl my-4">USER</p>
                 </>
               ) : (
                 <>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    strokeWidth={1.5}
-                    stroke="currentColor"
-                    className="w-10 h-10"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="M10.343 3.94c.09-.542.56-.94 1.11-.94h1.093c.55 0 1.02.398 1.11.94l.149.894c.07.424.384.764.78.93.398.164.855.142 1.205-.108l.737-.527a1.125 1.125 0 011.45.12l.773.774c.39.389.44 1.002.12 1.45l-.527.737c-.25.35-.272.806-.107 1.204.165.397.505.71.93.78l.893.15c.543.09.94.56.94 1.109v1.094c0 .55-.397 1.02-.94 1.11l-.893.149c-.425.07-.765.383-.93.78-.165.398-.143.854.107 1.204l.527.738c.32.447.269 1.06-.12 1.45l-.774.773a1.125 1.125 0 01-1.449.12l-.738-.527c-.35-.25-.806-.272-1.203-.107-.397.165-.71.505-.781.929l-.149.894c-.09.542-.56.94-1.11.94h-1.094c-.55 0-1.019-.398-1.11-.94l-.148-.894c-.071-.424-.384-.764-.781-.93-.398-.164-.854-.142-1.204.108l-.738.527c-.447.32-1.06.269-1.45-.12l-.773-.774a1.125 1.125 0 01-.12-1.45l.527-.737c.25-.35.273-.806.108-1.204-.165-.397-.505-.71-.93-.78l-.894-.15c-.542-.09-.94-.56-.94-1.109v-1.094c0-.55.398-1.02.94-1.11l.894-.149c.424-.07.765-.383.93-.78.165-.398.143-.854-.107-1.204l-.527-.738a1.125 1.125 0 01.12-1.45l.773-.773a1.125 1.125 0 011.45-.12l.737.527c.35.25.807.272 1.204.107.397-.165.71-.505.78-.929l.15-.894z"
-                    />
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
-                    />
-                  </svg>
+                  <GrUserWorker size={30}/>
                   <p className="text-2xl my-4">CRAFTSMAN</p>
                 </>
               )}
@@ -145,7 +117,7 @@ const LoginForm = () => {
             )}
           </div>
         </div>
-        <div className="xl:w-1/2 w-full bg-green-300/20 rounded-r-lg flex items-center justify-center text-center px-0 z-0">
+        <div className="xl:w-1/2 xl:py-0 py-10 w-full bg-green-300/20 rounded-b-lg xl:rounded-r-lg flex items-center justify-center text-center px-0 z-0">
           <div className="w-full pb-6 z-20">
             <div className="flex flex-col items-center justify-center gap-4 pb-4">
               <button
@@ -182,13 +154,21 @@ const LoginForm = () => {
                 Sign in with Google
               </button>
             </div>
-            <p className="text-gray-100">or use email to your account</p>
-            <form className="w-full px-12 mx-auto text-gray-700 flex flex-col pt-4">
-              <div className="">
-                <input type="email" placeholder="Email adress" />
+            <div className="divider"></div>
+            <p className="text-gray-100">or use email your account</p>
+            <form
+              className="sm:w-2/3 w-full px-4 lg:px-0 mx-auto text-gray-700"
+              onSubmit={(event) => loginUser(event)}
+            >
+              <div className="pb-2 pt-4">
+                <input
+                  type="email"
+                  placeholder="Email adress"
+                  onChange={(event) => setEmail(event.target.value)}
+                />
               </div>
               <div className="pb-2 pt-4">
-                <PasswordInput />
+                <PasswordInput setPassword={setPassword} />
               </div>
               <div className="text-right text-gray-200">
                 <Link
@@ -198,10 +178,10 @@ const LoginForm = () => {
                   Forgot your password?
                 </Link>
               </div>
-              <div className="flex items-center justify-center">
-                <button className="custom-button font-bold gap-3">
-                  <FaSignInAlt />
-                  Sign In
+              <div className="px-4 flex items-center justify-center">
+                <button type="submit" className="custom-button font-bold gap-3">
+                    <FaSignInAlt />
+                    Sign In
                 </button>
               </div>
             </form>
