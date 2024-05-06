@@ -21,6 +21,7 @@ const PasswordInput: React.FC<PasswordInputProps> = ({ setPassword }) => {
   return (
     <div className="relative">
       <input
+        className="custom-input"
         type={showPassword ? "text" : "password"}
         placeholder="Password"
         onChange={(event) => setPassword(event.target.value)}
@@ -162,6 +163,7 @@ const LoginForm = () => {
             >
               <div className="pb-2 pt-4">
                 <input
+                  className="custom-input"
                   type="email"
                   placeholder="Email adress"
                   onChange={(event) => setEmail(event.target.value)}

@@ -6,8 +6,8 @@
     @apply text-gray-700 inline-flex px-4 py-3 text-sm items-center gap-x-2 text-left w-full hover:bg-gray-300/30 hover:rounded-md
 }
 
-input {
-    @apply w-full bg-gray-100 p-3 rounded-lg focus:outline-none focus:shadow;
+.custom-input {
+    @apply w-full bg-gray-100 py-2 px-3 rounded-lg focus:outline-none focus:shadow;
 }
 
 .custom-button {
