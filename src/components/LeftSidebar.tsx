@@ -22,8 +22,8 @@ const LeftSidebar = () => {
   return (
     <div>
       <div id="leftSidebar" className="hidden lg:block">
-        <aside className="w-fit text-gray-700 fixed top-[81.5px] left-0 z-20 h-screen transition-transform bg-[#F3F9FF]/95 border-gray-300 border-r-2 dark:border-gray-600/30 dark:bg-[#0d1017]/95 dark:text-gray-300">
-          <div className="h-full w-full px-3 mr-14">
+        <aside className="w-fit flex flex-col justify-between text-gray-700 fixed top-[81.5px] left-0 z-20 h-[91.5vh] transition-transform bg-[#F3F9FF]/95 border-gray-300 border-r-2 dark:border-gray-600/30 dark:bg-[#0d1017]/95 dark:text-gray-300">
+          <div className="w-full px-3 mr-14">
             <button className="w-full justify-between flex p-2 my-2 text-gray-900 rounded-md dark:text-white hover:bg-gray-400 dark:hover:bg-gray-700">
               <span className="text-xl font-semibold text-black whitespace-nowrap dark:text-white">
                 {dictionary.component.leftSidebar.categories}
@@ -47,7 +47,7 @@ const LeftSidebar = () => {
               </div>
             </button>
 
-            <ul className="space-y-2 font-medium">
+            <ul className="space-y-2 font-medium container h-full w-full">
               {isLoading && (
                 <>
                   <li>
@@ -90,6 +90,13 @@ const LeftSidebar = () => {
                   </li>
                 ))}
             </ul>
+          </div>
+          <div className="w-full px-3 mr-14">
+            <a className="flex items-center justify-between p-2 text-gray-900 rounded-md group">
+              <div className="animate-pulse w-5 h-5 bg-gray-400 rounded-full"></div>
+              <p className="mx-4 text-white">See all</p>
+              <div className="animate-pulse w-5 h-5 bg-gray-400 rounded-full"></div>
+            </a>
           </div>
         </aside>
       </div>

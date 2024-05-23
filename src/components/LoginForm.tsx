@@ -6,6 +6,8 @@ import { LoginRequest } from "@/models/LoginRequest";
 import login from "@/services/auth-service";
 import { useUser } from "@/providers/user-provider";
 import {GrUserManager, GrUserWorker} from "react-icons/gr";
+import { useLoggedIn } from "@/providers/loggedIn-provider";
+import { is } from "immutable";
 
 interface PasswordInputProps {
   setPassword: Dispatch<SetStateAction<string>>;
@@ -47,6 +49,7 @@ const LoginForm = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const { setUsername } = useUser();
+  const { isLoggedIn, setIsLoggedIn } = useLoggedIn();
 
   async function loginUser(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();
@@ -61,6 +64,8 @@ const LoginForm = () => {
       setUsername(loggedInUser.user.userName as string | null);
       localStorage.setItem("token", loggedInUser.token);
       localStorage.setItem("refreshToken", loggedInUser.refreshToken);
+      setIsLoggedIn(true);
+      console.log(isLoggedIn);
     } catch (error) {
       console.error("Login failed:", error);
     }

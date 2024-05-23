@@ -1,13 +1,15 @@
 "use client";
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useDictionary } from "@/providers/dictionary-provider";
 import Link from "next/link";
 import { useUser } from "@/providers/user-provider";
+import { useLoggedIn } from "@/providers/loggedIn-provider";
 
 const RightSidebar = () => {
   const [showMaxiSidebar, setShowMaxiSidebar] = useState<boolean>(false);
   const dictionary = useDictionary();
   const { username } = useUser();
+  const { isLoggedIn } = useLoggedIn();
 
   function handleOpenSidebar() {
     setShowMaxiSidebar(!showMaxiSidebar);
@@ -20,6 +22,7 @@ const RightSidebar = () => {
       } else {
         setShowMaxiSidebar(false);
       }
+      console.log(isLoggedIn);
     };
 
     handleResize();

@@ -1,3 +1,4 @@
+import React from "react";
 import type { Locale } from "@/../i18n.config";
 import Title from "@/components/homePage/Title";
 

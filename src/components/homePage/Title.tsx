@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import React, { useState } from "react";
 import { useDictionary } from "@/providers/dictionary-provider";
 import RotateText from "@/components/homePage/RotateText";
 

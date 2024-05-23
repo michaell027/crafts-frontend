@@ -10,6 +10,7 @@ import LeftSidebar from "@/components/LeftSidebar";
 import RightSidebar from "@/components/RightSidebar";
 import { SidebarProvider } from "@/providers/sidebar-provider";
 import { UserProvider } from "@/providers/user-provider";
+import { LoggedInProvider } from "@/providers/loggedIn-provider";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -33,24 +34,26 @@ export default async function RootLayout({
       <body
         className={"bg-white text-gray-950 w-full min-h-screen dark:bg-black"}
       >
-        <UserProvider>
-          <DictionaryProvider dictionary={dictionary}>
-            <SidebarProvider>
-              <Header />
-              <div className={"flex-row"}>
-                <LeftSidebar />
-                <div
-                  className={
-                    "flex-1 lg:pl-[260px] pt-[80px] lg:pr-[255px] pl-0 pr-[60px]"
-                  }
-                >
-                  {children}
+        <LoggedInProvider>
+          <UserProvider>
+            <DictionaryProvider dictionary={dictionary}>
+              <SidebarProvider>
+                <Header />
+                <div className={"flex-row"}>
+                  <LeftSidebar />
+                  <div
+                    className={
+                      "flex-1 lg:pl-[260px] pt-[80px] lg:pr-[255px] pl-0 pr-[60px]"
+                    }
+                  >
+                    {children}
+                  </div>
+                  <RightSidebar />
                 </div>
-                <RightSidebar />
-              </div>
-            </SidebarProvider>
-          </DictionaryProvider>
-        </UserProvider>
+              </SidebarProvider>
+            </DictionaryProvider>
+          </UserProvider>
+        </LoggedInProvider>
       </body>
     </html>
   );

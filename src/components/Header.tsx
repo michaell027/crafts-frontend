@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import React, { useState } from "react";
 import LocaleSwitcher from "@/components/LocaleSwitcher";
 import { useDictionary } from "@/providers/dictionary-provider";
 import ThemeSwitcher from "@/components/ThemeSwitcher";
@@ -21,7 +21,7 @@ const Header = () => {
 
   return (
     <header className="fixed top-0 left-0 right-0 z-20 h-[81.5px] items-center flex text-gray-700 bg-[#F3F9FF]/95 border-b-2 border-gray-300 dark:border-gray-600/30 dark:bg-[#0d1017]/95 dark:text-gray-300">
-      <div className="container grid items-center grid-cols-3 auto-cols-fr px-4 h-full mx-auto">
+      <div className="container flex w-full flex-row justify-between px-4 h-full mx-auto">
         <div className="flex justify-start gap-2 items-center">
           <button
             id="left-sidebar-button"
