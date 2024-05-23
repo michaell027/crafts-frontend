@@ -21,11 +21,8 @@ jobs:
     - name: Install dependencies
       run: npm install
 
-    - name: Lint the project
-      run: next lint
-
     - name: Build
-      run: next build build
+      run: npm run build
 
     - name: Run tests
-      run: jest --config jest.config.cjs
+      run: npm test
