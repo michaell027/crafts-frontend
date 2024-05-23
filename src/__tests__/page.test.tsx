@@ -7,4 +7,8 @@ describe("Tests", () => {
   it("returns false", () => {
     expect(false).toBe(false);
   });
+  it('should', () => {
+    expect(true).toBe(true);
+
+  });
 });
